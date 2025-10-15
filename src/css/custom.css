@@ -1,30 +1,240 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Fire and Water theme CSS variables
  */
-
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Fire colors */
+  --ifm-color-primary: #7c3030;
+  --ifm-color-primary-dark: #702b2b;
+  --ifm-color-primary-darker: #6a2929;
+  --ifm-color-primary-darkest: #572222;
+  --ifm-color-primary-light: #883535;
+  --ifm-color-primary-lighter: #8e3737;
+  --ifm-color-primary-lightest: #a13e3e;
+  
+  /* Water accent colors */
+  --ifm-color-secondary: #216272;
+  --ifm-color-secondary-dark: #1e5867;
+  --ifm-color-secondary-darker: #1c5461;
+  --ifm-color-secondary-darkest: #174550;
+  --ifm-color-secondary-light: #246c7d;
+  --ifm-color-secondary-lighter: #267083;
+  --ifm-color-secondary-lightest: #2b8094;
+  
+  /* Other light mode variables */
+  --ifm-background-color: #f8f5f2;
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.9);
+  --ifm-font-family-base: 'Lato, sans-serif';
+  --ifm-heading-font-family: 'Playfair Display, serif';
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode theme overrides */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #e88a8a;
+  --ifm-color-primary-dark: #e36e6e;
+  --ifm-color-primary-darker: #e06060;
+  --ifm-color-primary-darkest: #d73434;
+  --ifm-color-primary-light: #eda6a6;
+  --ifm-color-primary-lighter: #f0b4b4;
+  --ifm-color-primary-lightest: #f7d6d6;
+  
+  --ifm-color-secondary: #6bc7dc;
+  --ifm-color-secondary-dark: #52bdd6;
+  --ifm-color-secondary-darker: #45b8d3;
+  --ifm-color-secondary-darkest: #2d9cb7;
+  --ifm-color-secondary-light: #84d1e2;
+  --ifm-color-secondary-lighter: #91d6e5;
+  --ifm-color-secondary-lightest: #b9e5ee;
+  
+  --ifm-background-color: #1d1a1a;
+  --ifm-navbar-background-color: rgba(30, 42, 58, 0.9);
+}
+
+/* Header gradient effect for fire/water balance */
+.hero--primary {
+  background: linear-gradient(135deg, var(--ifm-color-primary-darkest) 0%, var(--ifm-color-primary) 50%, var(--ifm-color-secondary) 100%);
+}
+
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/* Font Awesome Integration */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Adding some custom styles */
+.section-divider {
+  height: 120px;
+  background-image: url('/img/wave-divider.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 2rem 0;
+}
+
+/* Fire and water background elements */
+.fire-bg {
+  background: linear-gradient(135deg, rgba(124, 48, 48, 0.05), rgba(212, 175, 55, 0.1));
+  position: relative;
+  overflow: hidden;
+}
+
+.water-bg {
+  background: linear-gradient(135deg, rgba(33, 98, 114, 0.05), rgba(58, 161, 161, 0.1));
+  position: relative;
+  overflow: hidden;
+}
+
+/* Elegant button styles */
+.button--elegant-primary {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border-radius: 30px;
+  padding: 0.75rem 2rem;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button--elegant-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.15);
+}
+
+.button--elegant-secondary {
+  background-color: transparent;
+  color: var(--ifm-color-primary);
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: 30px;
+  padding: 0.75rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.button--elegant-secondary:hover {
+  background-color: var(--ifm-color-primary-lightest);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom button styles */
+.button {
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.button--primary {
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--ifm-color-primary-darkest) 100%);
+  border: none;
+}
+
+.button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(var(--ifm-color-primary-rgb), 0.3);
+}
+
+.button--secondary {
+  background: linear-gradient(90deg, var(--ifm-color-secondary) 0%, var(--ifm-color-secondary-darkest) 100%);
+  border: none;
+  color: white;
+}
+
+.button--secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(var(--ifm-color-secondary-rgb), 0.3);
+}
+
+.button--outline {
+  background: transparent;
+  border: 2px solid;
+}
+
+/* Schedule button in navbar styling */
+.schedule-button {
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--ifm-color-secondary) 100%) !important;
+  color: white !important;
+  padding: 0.5rem 1.25rem !important;
+  border-radius: 50px !important;
+  margin-left: 0.5rem;
+  transition: all 0.3s ease !important;
+}
+
+.schedule-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar styling */
+.navbar {
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.navbar__brand {
+  font-family: var(--ifm-heading-font-family);
+}
+
+.navbar__link {
+  font-weight: 500;
+}
+
+.navbar__link--active {
+  position: relative;
+}
+
+.navbar__link--active:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--ifm-color-secondary) 100%);
+}
+
+/* Footer styling */
+.footer {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-primary);
+}
+
+/* Body text improvements */
+body {
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ifm-heading-font-family);
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Utility classes */
+.margin-vert--xl {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Māori-inspired patterns */
+.maori-pattern {
+  position: relative;
+}
+
+.maori-pattern::before {
+  content: '';
+  position: absolute;
+  background-image: url('/img/maori-pattern.svg');
+  opacity: 0.08;
+  z-index: 0;
 }

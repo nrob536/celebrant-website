@@ -1,0 +1,146 @@
+.aboutHeader {
+  padding: 3rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, var(--ifm-color-primary-darkest) 0%, var(--ifm-color-primary) 50%, var(--ifm-color-secondary) 100%);
+  color: white;
+}
+
+.profileImageContainer {
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profileImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bioSection {
+  padding: 0 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--ifm-color-primary);
+  margin-bottom: 1rem;
+}
+
+.divider {
+  height: 3px;
+  width: 60px;
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--ifm-color-secondary) 100%);
+  margin: 1.5rem 0;
+}
+
+.philosophySection {
+  margin: 4rem 0;
+}
+
+.centeredTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.centeredTitle::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--ifm-color-secondary) 100%);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.philosophyCard {
+  padding: 2rem;
+  background-color: var(--ifm-background-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.philosophyCard:hover {
+  transform: translateY(-5px);
+}
+
+.iconWrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--ifm-color-secondary) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.qualificationsSection {
+  margin: 4rem 0;
+}
+
+.qualificationCard {
+  padding: 2rem;
+  background-color: var(--ifm-background-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  margin-bottom: 2rem;
+}
+
+.qualificationCard h3 {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.qualificationCard h3::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--ifm-color-secondary) 100%);
+  bottom: 0;
+  left: 0;
+}
+
+.qualificationCard ul {
+  padding-left: 1.5rem;
+}
+
+.qualificationCard li {
+  margin-bottom: 0.75rem;
+}
+
+.ctaContainer {
+  text-align: center;
+  margin: 4rem 0;
+  padding: 3rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+}
+
+.ctaButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 996px) {
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

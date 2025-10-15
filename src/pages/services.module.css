@@ -1,0 +1,168 @@
+.servicesHeader {
+  padding: 4rem 0;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+              var(--ifm-color-primary-lightest);
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.servicesHeader h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.servicesHeader p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.serviceIntro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.centeredTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.centeredTitle::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--ifm-color-primary) 0%, var(--ifm-color-secondary) 100%);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.serviceCard {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background: var(--ifm-card-background-color);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.serviceCard h3 {
+  margin-top: 0;
+  color: var(--ifm-color-primary);
+}
+
+.serviceImageContainer {
+  height: 100%;
+  min-height: 250px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.serviceImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.serviceCard:hover .serviceImage {
+  transform: scale(1.05);
+}
+
+.serviceContent {
+  padding: 0 1rem;
+}
+
+.serviceDescription {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.servicePrice {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--ifm-color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.serviceDetails {
+  padding-left: 1.5rem;
+}
+
+.serviceDetails li {
+  margin-bottom: 0.5rem;
+}
+
+.addOnCard {
+  padding: 1.5rem;
+  background-color: var(--ifm-background-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.addOnCard:hover {
+  transform: translateY(-5px);
+}
+
+.addOnPrice {
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  margin-top: 1rem;
+}
+
+.faqSection {
+  margin: 3rem 0;
+}
+
+.faqItem {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.faqItem:last-child {
+  border-bottom: none;
+}
+
+.faqItem h3 {
+  color: var(--ifm-color-primary-darker);
+  margin-bottom: 1rem;
+}
+
+.ctaContainer {
+  text-align: center;
+  margin: 4rem 0 2rem;
+  padding: 3rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 8px;
+}
+
+.ctaButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 996px) {
+  .serviceImageContainer {
+    margin-bottom: 1.5rem;
+  }
+  
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

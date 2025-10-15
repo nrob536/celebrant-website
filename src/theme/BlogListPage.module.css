@@ -1,0 +1,36 @@
+.testimonialsHeader {
+  padding: 4rem 0;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+              url('/img/testimonials-header.jpg') center/cover no-repeat;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.testimonialsHeader h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.testimonialsHeader p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonialIntro {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+@media (max-width: 768px) {
+  .testimonialsHeader {
+    padding: 2rem 0;
+  }
+  
+  .testimonialsHeader h1 {
+    font-size: 2rem;
+  }
+}
