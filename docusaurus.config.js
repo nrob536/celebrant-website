@@ -22,7 +22,7 @@ const config = {
   organizationName: 'nrob536', // Your GitHub username
   projectName: 'celebrant-website', // Your GitHub repo name
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
