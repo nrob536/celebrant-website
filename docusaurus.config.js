@@ -12,15 +12,15 @@ const config = {
   favicon: 'img/logo.webp',
 
   // Set the production url of your site here
-  url: 'https://yourusername.github.io',
+  url: 'https://nrob536.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/wedding-celebrant/',
+  baseUrl: '/celebrant-website/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'yourusername', // Your GitHub username
-  projectName: 'wedding-celebrant', // Your GitHub repo name
+  organizationName: 'nrob536', // Your GitHub username
+  projectName: 'celebrant-website', // Your GitHub repo name
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -43,7 +43,7 @@ const config = {
           showReadingTime: true,
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/nrob536/wedding-celebrant/tree/main/',
+            'https://github.com/nrob536/celebrant-website/tree/main/',
           blogSidebarTitle: 'Testimonials',
           blogTitle: 'Wedding Testimonials',
           blogDescription: 'What couples say about their wedding ceremonies',
@@ -137,7 +137,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Your Wife's Wedding Celebrant Services`,
+        copyright: `Copyright © ${new Date().getFullYear()} Marriedbygen Wedding Celebrant Services`,
       },
       prism: {
         theme: lightCodeTheme,
