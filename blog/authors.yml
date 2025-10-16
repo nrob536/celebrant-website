@@ -1,9 +1,6 @@
-marriedbygen:
+your-name:
   name: Genevieve Berning
   title: Wedding Celebrant
-  url: https://marriedbygen.co.nz
+  url: https://github.com/nrob536
   image_url: /img/avatar.jpeg
-  page: true
-  socials:
-    instagram: marriedbygen
-    facebook: marriedbygen
+  email: marriedbygen@gmail.com
