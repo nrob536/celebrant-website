@@ -74,7 +74,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3>Phone</h3>
-                  <p>(123) 456-7890</p>
+                  <p>(64) 456-7890</p>
                 </div>
               </div>
               
@@ -84,7 +84,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3>Email</h3>
-                  <p>hello@yourwifescelebrantbusiness.com</p>
+                  <p>marriedbygen@gmail.com</p>
                 </div>
               </div>
               
@@ -94,33 +94,18 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3>Location</h3>
-                  <p>Serving [Your Service Area]</p>
+                  <p>Serving [Wairarapa, Greater Wellington Region]</p>
                 </div>
               </div>
-              
-              <div className={styles.scheduleCallout}>
-                <h3>Prefer to talk directly?</h3>
-                <p>Schedule a free 15-minute consultation call</p>
-                <a 
-                  href="https://calendly.com/your-wife-celebrant" 
-                  className="button button--primary button--block"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  Book a Call
-                </a>
-              </div>
-              
+            
               <div className={styles.socialLinks}>
                 <h3>Follow Me</h3>
                 <div className={styles.socialIcons}>
-                  <a href="https://instagram.com/your-wife-celebrant" target="_blank" rel="noopener noreferrer">
+                  <a href="https://instagram.com/marriedbygen" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-instagram"></i>
                   </a>
-                  <a href="https://facebook.com/your-wife-celebrant" target="_blank" rel="noopener noreferrer">
+                  <a href="https://facebook.com/marriedbygen" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="https://pinterest.com/your-wife-celebrant" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-pinterest-p"></i>
                   </a>
                 </div>
               </div>
@@ -262,7 +247,7 @@ export default function Contact() {
               <div className={styles.faqItem}>
                 <h3>Do you require a deposit to secure my date?</h3>
                 <p>
-                  Yes, a non-refundable deposit (typically 30% of the total fee) is required to secure your wedding 
+                  Yes, a non-refundable deposit (typically 25% of the total fee) is required to secure your wedding 
                   date, along with a signed contract.
                 </p>
               </div>
@@ -271,7 +256,7 @@ export default function Contact() {
               <div className={styles.faqItem}>
                 <h3>What is your service area?</h3>
                 <p>
-                  I primarily serve the [Your Service Area] region. For ceremonies outside this area, 
+                  I primarily serve the Wairarapa and Greater Wellington Region. For ceremonies outside this area, 
                   additional travel fees may apply. Please contact me for details.
                 </p>
               </div>

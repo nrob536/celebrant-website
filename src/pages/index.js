@@ -15,18 +15,40 @@ function HeroSection() {
       <div className={styles.fireElement}></div>
       <div className="container">
         <div className={styles.heroContent}>
-          <h1 className={styles.heroTitle}>Celebrate Your Love Story</h1>
-          <p className={styles.heroSubtitle}>
+          <h1
+            className={clsx(styles.heroTitle, styles.textShadow)}
+            style={{
+              color: '#420B00', // crimson red
+              textShadow: '0 0 2px #fff, 0 0 12px #fff', // white glow
+            }}
+          >
+            Celebrate Your Love Story
+          </h1>
+          <p
+            className={clsx(styles.heroSubtitle, styles.textShadow)}
+            style={{
+              color: '#420B00', // crimson red
+              textShadow: '0 0 2px #fff, 0 0 11px #fff', // white glow
+            }}
+          >
             Creating memorable, personalized ceremonies that reflect your unique journey
           </p>
           <div className={styles.buttons}>
             <Link
               className={clsx("button", styles.buttonElegantPrimary)}
+              style={{
+                color: '#420B00', // crimson red
+                textShadow: '0 0 2px #fff, 0 0 4px #fff', // white glow
+              }}
               to="/contact">
               Let's Plan Your Day
             </Link>
             <Link
               className={clsx("button", styles.buttonElegantSecondary)}
+              style={{
+                color: '#420B00', // crimson red
+                textShadow: '0 0 2px #fff, 0 0 4px #fff', // white glow
+              }}
               to="/services">
               View Services
             </Link>
