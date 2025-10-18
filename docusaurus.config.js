@@ -69,15 +69,16 @@ const config = {
           {to: '/', label: 'Home', position: 'left'},
           {to: '/about', label: 'About', position: 'left'},
           {to: '/services', label: 'Services', position: 'left'},
-          {to: '/gallery', label: 'Gallery', position: 'left'},
-          {to: '/blog', label: 'Testimonials', position: 'left'},
+         // {to: '/gallery', label: 'Gallery', position: 'left'},
+         // {to: '/blog', label: 'Testimonials', position: 'left'},
           {to: '/contact', label: 'Contact', position: 'left'},
-          {
-            href: 'https://calendly.com/your-wife-celebrant', // Replace with actual scheduling link
-            label: 'Schedule a Call',
-            position: 'right',
-            className: 'schedule-button',
-          },
+          {to: '/timeline', label: 'Timeline', position: 'left'},
+          //{
+          //  href: 'https://calendly.com/your-wife-celebrant', // Replace with actual scheduling link
+          //  label: 'Schedule a Call',
+          //  position: 'right',
+          //  className: 'schedule-button',
+          //},
         ],
       },
       footer: {
@@ -103,15 +104,7 @@ const config = {
           {
             title: 'Connect',
             items: [
-              {
-                label: 'Gallery',
-                to: '/gallery',
-              },
-              {
-                label: 'Testimonials',
-                to: '/blog',
-              },
-              {
+          {
                 label: 'Contact',
                 to: '/contact',
               },
@@ -122,16 +115,12 @@ const config = {
             items: [
               {
                 label: 'Instagram',
-                href: 'https://www.instagram.com/your-wife-celebrant',
+                href: 'https://www.instagram.com/marriedbygen',
               },
               {
                 label: 'Facebook',
-                href: 'https://www.facebook.com/your-wife-celebrant',
-              },
-              {
-                label: 'Pinterest',
-                href: 'https://www.pinterest.com/your-wife-celebrant',
-              },
+                href: 'https://www.facebook.com/marriedbygen',
+              }              
             ],
           },
         ],
@@ -140,6 +129,7 @@ const config = {
       prism: {
         theme: themes.github,
         darkTheme: themes.dracula,
+        // Add any additional themes you may need
       },
       colorMode: {
         defaultMode: 'light',
