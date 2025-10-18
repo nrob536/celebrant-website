@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkcelebrant_website=globalThis.webpackChunkcelebrant_website||[]).push([[903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/celebrant-website/blog","blogTitle":"Wedding Testimonials","authorsListPath":"/celebrant-website/blog/authors"}')}}]);
