@@ -1,0 +1,6 @@
+<!-- filepath: /home/pinguino/repos/wedding-celebrant/static/img/wave-element.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <path fill="#216272" d="M0,75 C30,40 70,40 100,75 C130,110 170,110 200,75 L200,150 L0,150 Z"/>
+  <path fill="#216272" d="M0,50 C30,15 70,15 100,50 C130,85 170,85 200,50 L200,60 C170,95 130,95 100,60 C70,25 30,25 0,60 Z" opacity="0.6"/>
+  <path fill="#216272" d="M0,25 C30,-10 70,-10 100,25 C130,60 170,60 200,25 L200,35 C170,70 130,70 100,35 C70,0 30,0 0,35 Z" opacity="0.3"/>
+</svg>

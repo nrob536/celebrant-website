@@ -1,0 +1,9 @@
+<!-- filepath: /home/pinguino/repos/wedding-celebrant/static/img/maori-pattern.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path fill="#000000" d="M50,10 C60,20 60,30 50,40 C40,30 40,20 50,10z"/>
+  <path fill="#000000" d="M30,30 C40,40 40,50 30,60 C20,50 20,40 30,30z"/>
+  <path fill="#000000" d="M70,30 C80,40 80,50 70,60 C60,50 60,40 70,30z"/>
+  <path fill="#000000" d="M50,50 C60,60 60,70 50,80 C40,70 40,60 50,50z"/>
+  <path fill="#000000" d="M10,50 C20,60 20,70 10,80 C0,70 0,60 10,50z"/>
+  <path fill="#000000" d="M90,50 C100,60 100,70 90,80 C80,70 80,60 90,50z"/>
+</svg>

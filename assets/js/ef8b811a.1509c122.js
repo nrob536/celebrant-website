@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkcelebrant_website=globalThis.webpackChunkcelebrant_website||[]).push([[947],{6600:e=>{e.exports=JSON.parse('{"authors":[{"name":"Genevieve Berning","title":"Wedding Celebrant","url":"https://github.com/nrob536","email":"marriedbygen@gmail.com","imageURL":"/img/avatar.jpeg","key":"your-name","page":null,"count":3}]}')}}]);
