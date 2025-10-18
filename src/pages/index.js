@@ -4,6 +4,9 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import Link from '@docusaurus/Link';
 import clsx from 'clsx';
+// Temporarily disable Testimonials and Gallery pages by commenting out their imports and usage
+// import TestimonialSection from './TestimonialSection';
+// import GallerySection from './GallerySection';
 
 function HeroSection() {
   return (
@@ -38,7 +41,7 @@ function FeatureSection() {
   const features = [
     {
       title: 'Personalized Ceremonies',
-      imageUrl: 'img/features/personalized.jpg',
+      src: 'img/personalized.png',
       description: (
         <>
           Every love story is unique. Your ceremony should be too. I create 
@@ -48,7 +51,7 @@ function FeatureSection() {
     },
     {
       title: 'Inclusive & Diverse',
-      imageUrl: 'img/features/inclusive.jpg',
+      src: '/img/inclusive.png',
       description: (
         <>
           I celebrate love in all forms. LGBTQ+ weddings, multicultural ceremonies, 
@@ -58,7 +61,7 @@ function FeatureSection() {
     },
     {
       title: 'Experienced & Professional',
-      imageUrl: 'img/features/professional.jpg',
+      imageUrl: '/img/professional.png',
       description: (
         <>
           With years of experience crafting memorable ceremonies, I ensure your
@@ -152,9 +155,6 @@ export default function Home() {
       <main>
         <FeatureSection />
         <div className={styles.sectionDivider}></div>
-        <TestimonialSection />
-        <div className={styles.sectionDivider}></div>
-        <CTASection />
       </main>
     </Layout>
   );
