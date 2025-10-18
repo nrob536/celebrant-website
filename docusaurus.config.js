@@ -99,12 +99,7 @@ const config = {
                 label: 'Services',
                 to: '/services',
               },
-            ],
-          },
-          {
-            title: 'Connect',
-            items: [
-          {
+              {
                 label: 'Contact',
                 to: '/contact',
               },
@@ -120,7 +115,11 @@ const config = {
               {
                 label: 'Facebook',
                 href: 'https://www.facebook.com/marriedbygen',
-              }              
+              },
+              {
+                label: 'Email',
+                href: 'mailto:marriedbygen@gmail.com',
+              },              
             ],
           },
         ],
