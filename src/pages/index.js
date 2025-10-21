@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import Link from '@docusaurus/Link';
 import clsx from 'clsx';
+import Sidebar from '../components/Sidebar';
 // Temporarily disable Testimonials and Gallery pages by commenting out their imports and usage
 // import TestimonialSection from './TestimonialSection';
 // import GallerySection from './GallerySection';
@@ -128,15 +129,29 @@ function CTASection() {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
     <Layout
       title={siteConfig.title}
       description="Create beautiful, personalized wedding ceremonies that celebrate your unique love story">
-      <HeroSection />
-      <main>
-        <FeatureSection />
-        <div className={styles.sectionDivider}></div>
-      </main>
+      <button
+        className={styles.sidebarToggle}
+        onClick={() => setSidebarOpen(true)}
+        aria-label="Open sidebar"
+      >
+        ☰
+      </button>
+      <div className={styles.withSidebar}>
+        <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+        <div className={styles.mainContent}>
+          <HeroSection />
+          <main>
+            <FeatureSection />
+            <div className={styles.sectionDivider}></div>
+          </main>
+        </div>
+      </div>
     </Layout>
   );
 }

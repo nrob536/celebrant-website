@@ -19,6 +19,9 @@
   --ifm-color-secondary-light: #246c7d;
   --ifm-color-secondary-lighter: #267083;
   --ifm-color-secondary-lightest: #2b8094;
+
+  --sidebar-bg: #fff;
+  --sidebar-link: #d16b6b;
   
   /* Other light mode variables */
   --ifm-background-color: #f8f5f2;
@@ -44,6 +47,9 @@
   --ifm-color-secondary-light: #84d1e2;
   --ifm-color-secondary-lighter: #91d6e5;
   --ifm-color-secondary-lightest: #b9e5ee;
+
+  --sidebar-bg: #18191a;
+  --sidebar-link: #ffb3b3;
   
   --ifm-background-color: #1d1a1a;
   --ifm-navbar-background-color: rgba(30, 42, 58, 0.9);
@@ -237,4 +243,9 @@ p {
   background-image: url('/img/maori-pattern.svg');
   opacity: 0.08;
   z-index: 0;
+}
+
+.sidebar {
+  background: var(--sidebar-bg);
+  /* ...rest of your styles... */
 }
