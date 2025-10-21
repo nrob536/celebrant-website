@@ -2,6 +2,16 @@
  * CSS styles for the Home page
  */
 
+:root {
+  --sidebar-bg: #fff;
+  --sidebar-link: #d16b6b;
+}
+
+[data-theme="dark"] {
+  --sidebar-bg: #18191a;
+  --sidebar-link: #ffb3b3;
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
@@ -164,6 +174,66 @@
   margin-top: 2rem;
 }
 
+.sidebarToggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2100;
+  background: #fff;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.withSidebar {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  min-width: 200px;
+  max-width: 260px;
+  background: var(--sidebar-bg); /* Always theme-aware */
+  border-right: 1px solid var(--ifm-toc-border-color, #eaecef);
+  height: 100vh;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.04);
+  z-index: 2000;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar ul li a,
+.sidebar ul li {
+  color: var(--sidebar-link);
+}
+
+@media (max-width: 899px) {
+  .withSidebar {
+    flex-direction: column;
+  }
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transform: translateX(-100%);
+  }
+  .open {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 900px) {
+  .sidebarToggle {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 966px) {
   .heroTitle {
     font-size: 2rem;
@@ -181,4 +251,17 @@
     flex-direction: column;
     align-items: center;
   }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+li {
+  margin: 1.5rem 0;
+  text-align: left;
+  padding-left: 2rem;
 }
