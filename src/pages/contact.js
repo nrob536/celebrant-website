@@ -65,18 +65,8 @@ export default function Contact() {
               <h2>Get In Touch</h2>
               <p>
                 I'd love to hear about your wedding plans and how I can help make your ceremony 
-                special. Fill out the form or contact me directly using the information below.
+                special. Fill out the template below and email me directly.
               </p>
-              
-              <div className={styles.contactMethod}>
-                <div className={styles.contactIcon}>
-                  <i className="fas fa-phone-alt"></i>
-                </div>
-                <div>
-                  <h3>Phone</h3>
-                  <p>(64) 456-7890</p>
-                </div>
-              </div>
               
               <div className={styles.contactMethod}>
                 <div className={styles.contactIcon}>
@@ -84,7 +74,11 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3>Email</h3>
-                  <p>marriedbygen@gmail.com</p>
+                  <p>
+                    <a href="mailto:marriedbygen@gmail.com">
+                      marriedbygen@gmail.com
+                    </a>
+                  </p>
                 </div>
               </div>
               
@@ -94,7 +88,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3>Location</h3>
-                  <p>Serving [Wairarapa, Greater Wellington Region]</p>
+                  <p>Serving [Wairarapa Region]</p>
                 </div>
               </div>
             
@@ -114,107 +108,29 @@ export default function Contact() {
           
           <div className="col col--7">
             <div className={styles.formContainer}>
-              <h2>Inquiry Form</h2>
-              
-              {formSubmitted ? (
-                <div className={styles.thankYouMessage}>
-                  <h3>Thank You!</h3>
-                  <p>Your message has been received. I'll get back to you within 24-48 hours.</p>
-                  <button 
-                    className="button button--primary"
-                    onClick={() => setFormSubmitted(false)}>
-                    Send Another Message
-                  </button>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className={styles.contactForm}>
-                  <div className={styles.formRow}>
-                    <div className={styles.formGroup}>
-                      <label htmlFor="name">Your Name*</label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        required
-                        className={styles.formControl}
-                      />
-                    </div>
-                    <div className={styles.formGroup}>
-                      <label htmlFor="email">Email Address*</label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required
-                        className={styles.formControl}
-                      />
-                    </div>
-                  </div>
-                  
-                  <div className={styles.formRow}>
-                    <div className={styles.formGroup}>
-                      <label htmlFor="phone">Phone Number</label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        className={styles.formControl}
-                      />
-                    </div>
-                    <div className={styles.formGroup}>
-                      <label htmlFor="date">Wedding Date (if known)</label>
-                      <input
-                        type="date"
-                        id="date"
-                        name="date"
-                        value={formData.date}
-                        onChange={handleChange}
-                        className={styles.formControl}
-                      />
-                    </div>
-                  </div>
-                  
-                  <div className={styles.formGroup}>
-                    <label htmlFor="location">Wedding Location (if known)</label>
-                    <input
-                      type="text"
-                      id="location"
-                      name="location"
-                      value={formData.location}
-                      onChange={handleChange}
-                      className={styles.formControl}
-                    />
-                  </div>
-                  
-                  <div className={styles.formGroup}>
-                    <label htmlFor="message">Your Message*</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows="5"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      className={styles.formControl}
-                      placeholder="Tell me about your wedding plans and how I can help..."
-                    ></textarea>
-                  </div>
-                  
-                  <button
-                    type="submit"
-                    className={clsx("button button--primary button--lg", styles.submitButton)}
-                    disabled={submitting}
-                  >
-                    {submitting ? 'Sending...' : 'Send Message'}
-                  </button>
-                </form>
-              )}
+              <h2>Email Inquiry Template</h2>
+              <p>
+                Please copy and paste the template below into your email to <a href="mailto:marriedbygen@gmail.com">marriedbygen@gmail.com</a> and fill in your details.
+              </p>
+              <pre className={styles.emailTemplate}>
+{`Subject: Wedding Inquiry
+
+Your Name:
+Email Address:
+Phone Number (optional):
+Wedding Date (if known):
+Wedding Location (if known):
+
+Your Message:
+(Tell me about your wedding plans and how I can help...)`}
+              </pre>
+              <a
+                href="mailto:marriedbygen@gmail.com?subject=Wedding Inquiry&body=Your Name:%0AEmail Address:%0APhone Number (optional):%0AWedding Date (if known):%0AWedding Location (if known):%0A%0AYour Message:%0A(Tell me about your wedding plans and how I can help...)"
+                className="button button--primary button--lg"
+                style={{ marginTop: 16 }}
+              >
+                Open Email App
+              </a>
             </div>
           </div>
         </div>

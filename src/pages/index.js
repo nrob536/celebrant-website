@@ -60,58 +60,17 @@ function HeroSection() {
 }
 
 function FeatureSection() {
-  const features = [
-    {
-      title: 'Personalized Ceremonies',
-      src: 'img/personalized.png',
-      description: (
-        <>
-          Every love story is unique. Your ceremony should be too. I create 
-          customized ceremonies that truly reflect your relationship.
-        </>
-      ),
-    },
-    {
-      title: 'Inclusive & Diverse',
-      src: '/img/inclusive.png',
-      description: (
-        <>
-          I celebrate love in all forms. LGBTQ+ weddings, multicultural ceremonies, 
-          and interfaith celebrations are all welcomed and honored.
-        </>
-      ),
-    },
-    {
-      title: 'Experienced & Professional',
-      imageUrl: '/img/professional.png',
-      description: (
-        <>
-          With years of experience crafting memorable ceremonies, I ensure your
-          special day flows perfectly from start to finish.
-        </>
-      ),
-    },
-  ];
-
   return (
     <section className={clsx(styles.features, 'water-bg', 'maori-pattern')}>
       <div className={styles.maoriCornerElement}></div>
       <div className="container">
         <h2 className={styles.sectionTitle}>Creating Magical Moments</h2>
-        <div className="row">
-          {features.map(({title, imageUrl, description}, idx) => (
-            <div key={idx} className={clsx('col col--4', styles.feature)}>
-              <div className={styles.featureCard}>
-                <div className={styles.featureImageContainer}>
-                  <div className={styles.featurePlaceholder}>{title}</div>
-                </div>
-                <div className={styles.featureContent}>
-                  <h3>{title}</h3>
-                  <p>{description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+        <div className={clsx(styles.featureTextBlock)}>
+          <p>
+            Every love story is unique. Your ceremony should be too. I create customized ceremonies that truly reflect your relationship.
+            I celebrate love in all forms. LGBTQ+ weddings, multicultural ceremonies, and interfaith celebrations are all welcomed and honored.
+            With years of experience crafting memorable ceremonies, I ensure your special day flows perfectly from start to finish.
+          </p>
         </div>
       </div>
     </section>
