@@ -10,10 +10,10 @@ const config = {
   favicon: 'img/logo.webp',
 
   // Set the production url of your site here
-  url: 'https://nrob536.github.io',
+  url: 'https://marriedbygen.co.nz',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/celebrant-website/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
