@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkcelebrant_website=globalThis.webpackChunkcelebrant_website||[]).push([[549],{4170:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/celebrant-website/blog","page":1,"postsPerPage":3,"totalPages":1,"totalCount":3,"blogDescription":"What couples say about their wedding ceremonies","blogTitle":"Wedding Testimonials"}}')}}]);
