@@ -50,7 +50,7 @@ export default function Contact() {
   return (
     <Layout
       title="Contact Me"
-      description="Get in touch to discuss your wedding ceremony needs">
+      description="Get in touch to discuss your wedding or civil union ceremony needs">
       <header className={styles.contactHeader}>
         <div className="container">
           <h1>Contact Me</h1>
@@ -64,7 +64,7 @@ export default function Contact() {
             <div className={styles.contactInfo}>
               <h2>Get In Touch</h2>
               <p>
-                I'd love to hear about your wedding plans and how I can help make your ceremony 
+                I'd love to hear about your wedding or civil union plans and how I can help make your ceremony
                 special. Fill out the template below and email me directly.
               </p>
               
@@ -145,8 +145,8 @@ Your Message:
               <div className={styles.faqItem}>
                 <h3>How soon will you respond to my inquiry?</h3>
                 <p>
-                  I typically respond to all inquiries within 24-48 hours. If you need an immediate response, 
-                  please feel free to call or text me directly.
+                  I typically respond to all inquiries within 24-48 hours. If you haven't heard back within that time frame,
+                  please check your spam/junk folder or feel free to follow up via email.
                 </p>
               </div>
             </div>
@@ -172,7 +172,7 @@ Your Message:
               <div className={styles.faqItem}>
                 <h3>What is your service area?</h3>
                 <p>
-                  I primarily serve the Wairarapa and Greater Wellington Region. For ceremonies outside this area, 
+                  I primarily serve the Wairarapa Region. For ceremonies outside this area, 
                   additional travel fees may apply. Please contact me for details.
                 </p>
               </div>

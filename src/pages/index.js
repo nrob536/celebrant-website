@@ -69,7 +69,7 @@ function FeatureSection() {
         <div className={clsx(styles.featureTextBlock)}>
           <p>
             Every love story is unique. Your ceremony should be too. I create customized ceremonies that truly reflect your relationship.
-            I celebrate love in all forms. LGBTQ+ weddings, multicultural ceremonies, and interfaith celebrations are all welcomed and honored.
+            I celebrate love in all forms. LGBTQ+ weddings, multicultural ceremonies, civil unions, and interfaith celebrations are all welcomed and honored.
             With years of experience crafting memorable ceremonies, I ensure your special day flows perfectly from start to finish.
           </p>
         </div>
@@ -134,7 +134,7 @@ export default function Home() {
   return (
     <Layout
       title={siteConfig.title}
-      description="Create beautiful, personalized wedding ceremonies that celebrate your unique love story">
+      description="Create beautiful, personalized wedding  and civil union ceremonies that celebrate your unique love story">
       <button
         className={styles.sidebarToggle}
         onClick={() => setSidebarOpen(true)}
