@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="96mm" height="61mm" viewBox="0 0 960 610" version="1.1">
+  <title>Married by Gen Business Card Source</title>
+  <desc>Single-sided business card generated from card/template/card.config.json.</desc>
+  <defs>
+    <linearGradient id="bgGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8f5f2"/>
+      <stop offset="70%" stop-color="#f4eeea"/>
+      <stop offset="100%" stop-color="#edf3f4"/>
+    </linearGradient>
+
+    <linearGradient id="accentStroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3030"/>
+      <stop offset="100%" stop-color="#216272"/>
+    </linearGradient>
+
+  </defs>
+
+  <rect x="0" y="0" width="960" height="610" fill="url(#bgGlow)"/>
+
+  <circle cx="48" cy="34" r="248" fill="#7c3030" fill-opacity="0.06"/>
+  <circle cx="950" cy="600" r="250" fill="#216272" fill-opacity="0.06"/>
+
+  <rect x="30" y="30" width="900" height="550" rx="14" fill="none" stroke="#7c3030" stroke-opacity="0.18" stroke-width="2"/>
+  <rect x="60" y="60" width="840" height="490" rx="10" fill="none" stroke="#8f7a6a" stroke-opacity="0.22" stroke-width="1.2"/>
+  <rect x="76" y="84" width="806" height="8" rx="4" fill="url(#accentStroke)" fill-opacity="0.32"/>
+
+  <line x1="414" y1="138" x2="414" y2="472" stroke="url(#accentStroke)" stroke-opacity="0.55" stroke-width="2"/>
+
+  <g id="logo-panel">
+    <rect x="100" y="154" width="296" height="312" rx="16" fill="#000000" fill-opacity="0.06"/>
+    <rect x="96" y="148" width="296" height="312" rx="16" fill="#ffffff" fill-opacity="0.90"/>
+    <rect x="112" y="164" width="264" height="232" rx="10" fill="none" stroke="#8f7a6a" stroke-opacity="0.35" stroke-width="1"/>
+    <image href="../../static/img/logo.svg" x="124" y="172" width="240" height="220" preserveAspectRatio="xMidYMid meet"/>
+    <text x="244" y="432" text-anchor="middle" font-family="Lato, Arial, sans-serif" font-size="20" letter-spacing="1.8" fill="#216272">WEDDING OFFICIANT</text>
+  </g>
+
+  <g id="content" transform="translate(446,150)">
+    <text x="0" y="0" font-family="&apos;Playfair Display&apos;, &apos;Times New Roman&apos;, serif" font-size="64" font-weight="700" fill="#7c3030">Gen Berning</text>
+    <text x="2" y="40" font-family="Lato, Arial, sans-serif" font-size="23" font-weight="700" letter-spacing="1.6" fill="#216272">WEDDING OFFICIANT</text>
+
+    <line x1="0" y1="62" x2="404" y2="62" stroke="url(#accentStroke)" stroke-width="3" stroke-linecap="round"/>
+
+    <text x="0" y="106" font-family="&apos;Playfair Display&apos;, &apos;Times New Roman&apos;, serif" font-size="23" font-style="italic" fill="#5d2b2b"><tspan x="0" dy="0">Creating memorable, personalized</tspan><tspan x="0" dy="30">ceremonies that reflect your unique</tspan><tspan x="0" dy="30">journey</tspan></text>
+
+    <g transform="translate(0,0)">
+
+      <circle cx="9" cy="202" r="4" fill="#7c3030"/>
+      <text x="22" y="210" font-family="Lato, Arial, sans-serif" font-size="24" fill="#2a2a2a">+64 021 211 9615</text>
+
+      <circle cx="9" cy="242" r="4" fill="#216272"/>
+      <text x="22" y="250" font-family="Lato, Arial, sans-serif" font-size="24" fill="#2a2a2a">marriedbygen@gmail.com</text>
+
+      <circle cx="9" cy="282" r="4" fill="#7c3030"/>
+      <text x="22" y="290" font-family="Lato, Arial, sans-serif" font-size="24" fill="#2a2a2a">marriedbygen.co.nz</text>
+
+      <circle cx="9" cy="322" r="4" fill="#216272"/>
+      <text x="22" y="330" font-family="Lato, Arial, sans-serif" font-size="24" fill="#2a2a2a">Serving Wairarapa region</text>
+    </g>
+  </g>
+
+  
+
+  <g id="print-guides" fill="none" font-family="Lato, Arial, sans-serif" pointer-events="none">
+    <rect x="0.5" y="0.5" width="959" height="609" stroke="#d22c2c" stroke-dasharray="12 10" stroke-width="1.5"/>
+    <rect x="30" y="30" width="900" height="550" stroke="#3a3a3a" stroke-dasharray="10 8" stroke-width="1.4"/>
+    <rect x="60" y="60" width="840" height="490" stroke="#1b8f3f" stroke-dasharray="9 7" stroke-width="1.4"/>
+    <text x="72" y="78" font-size="18" fill="#1b8f3f">Safe Area (84 x 49 mm)</text>
+    <text x="72" y="98" font-size="15" fill="#3a3a3a">Cut Line (90 x 55 mm)</text>
+    <text x="72" y="118" font-size="15" fill="#d22c2c">Bleed Edge (96 x 61 mm)</text>
+  </g>
+</svg>

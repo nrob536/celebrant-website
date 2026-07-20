@@ -1,0 +1,55 @@
+{
+  "spec": {
+    "finalCutMm": {
+      "width": 90,
+      "height": 55
+    },
+    "bleedMm": 3,
+    "safeInsetMm": 3,
+    "pxPerMm": 10
+  },
+  "brand": {
+    "primary": "#7c3030",
+    "secondary": "#216272",
+    "background": "#f8f5f2",
+    "text": "#2a2a2a",
+    "headingFont": "'Playfair Display', 'Times New Roman', serif",
+    "bodyFont": "Lato, Arial, sans-serif"
+  },
+  "content": {
+    "name": "Gen Berning",
+    "title": "WEDDING OFFICIANT",
+    "tagline": "Creating memorable, personalized ceremonies that reflect your unique journey",
+    "contactRows": [
+      "+64 021 211 9615",
+      "marriedbygen@gmail.com",
+      "marriedbygen.co.nz",
+      "Serving Wairarapa region"
+    ]
+  },
+  "assets": {
+    "logoPath": "../../static/img/logo.svg"
+  },
+  "layout": {
+    "cardCornerRadiusPx": 14,
+    "leftPanel": {
+      "x": 96,
+      "y": 148,
+      "width": 296,
+      "height": 312,
+      "radius": 16
+    },
+    "logo": {
+      "x": 124,
+      "y": 172,
+      "width": 240,
+      "height": 220
+    },
+    "leftPanelLabelY": 432,
+    "rightBlock": {
+      "x": 446,
+      "y": 150,
+      "maxWidth": 404
+    }
+  }
+}
